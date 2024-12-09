@@ -1,0 +1,29 @@
+{
+  "name": "yolo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js",
+    "test:functional": "jest tests/functional/*.test.js",
+    "test:non-functional": "jest tests/non-functional/*.test.js"
+  },
+  "jest": {
+    "testMatch": [
+      "**/*.test.js"
+    ],
+    "testEnvironment": "node",
+    "verbose": true
+  },
+  "devDependencies": {
+    "axios": "^1.7.9",
+    "faker": "^5.5.3",
+    "jest": "^29.7.0",
+    "nock": "^13.5.6",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  }
+}
